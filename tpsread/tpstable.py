@@ -194,5 +194,11 @@ class TpsTablesList:
 
     def get_number(self, name):
         for i in self.__tables:
+            print(self.__tables[i].name)
+            print('-----')
+            print(self.__tables[i].number)
+            print('-----')
+            print(self.__tables[i].get_definition())
+            print('---------------\n')
             if self.__tables[i].name == name:
                 return i
